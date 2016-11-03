@@ -1,5 +1,5 @@
 {application, fixer, [
-	{description, "Erlang/Elixir module for fixer.io"}
+	{description, "Erlang/Elixir module for fixer.io - foreign exchange rates and currency conversion"}
 	, {vsn, "0.0.2"}
 	, {modules, []}
 	, {registered, []}
