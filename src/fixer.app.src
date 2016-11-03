@@ -1,6 +1,6 @@
 {application, fixer, [
 	{description, "Erlang/Elixir module for fixer.io"}
-	, {vsn, "0.0.1"}
+	, {vsn, "0.0.2"}
 	, {modules, []}
 	, {registered, []}
 	, {applications, [kernel
