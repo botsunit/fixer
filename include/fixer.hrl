@@ -1,0 +1,3 @@
+-define(BASE, <<"EUR">>).
+-define(FIXERIO_URL, <<"http://api.fixer.io/">>).
+-define(PRECISION, 4).
