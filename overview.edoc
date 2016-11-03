@@ -1,7 +1,7 @@
 @author Gregoire Lejeune <gregoire.lejeune@botsunit.com>
 @copyright 2016 Bots Unit
 @version 0.0.1
-@title Erlang/Elixir module for fixer.io
+@title Erlang/Elixir module for fixer.io - foreign exchange rates and currency conversion
 @doc
 <h2>Licence</h2>
 

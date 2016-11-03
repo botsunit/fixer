@@ -1,6 +1,6 @@
 
 
-# Erlang/Elixir module for fixer.io #
+# Erlang/Elixir module for fixer.io - foreign exchange rates and currency conversion #
 
 Copyright (c) 2016 Bots Unit
 
@@ -28,5 +28,5 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 
 <table width="100%" border="0" summary="list of modules">
-<tr><td><a href="https://gitlab.botsunit.com/msaas/idcheckio/tree/master/doc/fixer.md" class="module">fixer</a></td></tr></table>
+<tr><td><a href="https://github.com/botsunit/fixer/blob/master/doc/fixer.md" class="module">fixer</a></td></tr></table>
 

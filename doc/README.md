@@ -1,6 +1,6 @@
 
 
-# Erlang/Elixir module for fixer.io #
+# Erlang/Elixir module for fixer.io - foreign exchange rates and currency conversion #
 
 Copyright (c) 2016 Bots Unit
 
