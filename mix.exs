@@ -4,7 +4,7 @@ defmodule Fixer.Mixfile do
   def project do
     [
       app: :fixer,
-      version: "0.0.2",
+      version: "0.1.0",
       elixir: "~> 1.2",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
@@ -23,8 +23,8 @@ defmodule Fixer.Mixfile do
 
   defp deps do
     [
-      {:bucs, "~> 0.1.9"},
-      {:doteki, "~> 0.1.13"},
+      {:bucs, "~> 1.0.0"},
+      {:doteki, "~> 1.0.0"},
       {:jsx, "~> 2.8.0"}    
     ]
   end
