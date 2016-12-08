@@ -23,8 +23,8 @@ defmodule Fixer.Mixfile do
 
   defp deps do
     [
-      {:bucs, "~> 1.0.2"},
-      {:doteki, "~> 1.0.2"},
+      {:bucs, "~> 1.0.3"},
+      {:doteki, "~> 1.0.3"},
       {:jsx, "~> 2.8.0"}    
     ]
   end
@@ -35,8 +35,9 @@ defmodule Fixer.Mixfile do
 
   defp compile_with_hooks(args) do
     pre_compile_hooks()
-    :ok = Mix.Task.run("compile", args)
+    result = Mix.Task.run("compile", args)
     post_compile_hooks()
+    result
   end
 
   defp pre_compile_hooks() do
