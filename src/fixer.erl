@@ -191,7 +191,9 @@ get_rate(Rates, Currency) ->
     #{<<"base">> := Currency} ->
       1;
     #{<<"rates">> := Rates0} ->
-      maps:get(Currency, Rates0, error)
+      maps:get(Currency, Rates0, error);
+    _ ->
+      error
   end.
 
 to_float(Value, Precision) ->
