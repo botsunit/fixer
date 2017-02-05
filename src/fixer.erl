@@ -158,10 +158,8 @@ today() ->
 preload(Table, Base, From, To) ->
   case bucdate:compare(From, To) of
     -1 ->
-      io:format("==> preload done!~n"),
       ok;
     _ ->
-      io:format("==> preload ~p~n", [From]),
       get_rates(Base, bucdate:format("Y-m-d", From), Table),
       preload(Table, Base, bucdate:add(From, 1, days), To)
   end.

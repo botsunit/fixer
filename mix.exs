@@ -8,8 +8,8 @@ defmodule Fixer.Mixfile do
       elixir: "~> 1.2",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
-      deps: deps,
-      aliases: aliases
+      deps: deps(),
+      aliases: aliases()
     ]
   end
 
@@ -23,8 +23,8 @@ defmodule Fixer.Mixfile do
 
   defp deps do
     [
-      {:bucs, "~> 1.0.3"},
-      {:doteki, "~> 1.0.3"},
+      {:bucs, "~> 1.0.6"},
+      {:doteki, "~> 1.0.5"},
       {:jsx, "~> 2.8.0"}    
     ]
   end
