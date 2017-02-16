@@ -1,6 +1,6 @@
 {application, fixer, [
 	{description, "Erlang/Elixir module for fixer.io - foreign exchange rates and currency conversion"}
-	, {vsn, "0.2.4"}
+	, {vsn, "0.2.5"}
 	, {modules, []}
 	, {registered, []}
 	, {applications, [kernel
