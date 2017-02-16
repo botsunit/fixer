@@ -1,3 +1,3 @@
-%{"bucs": {:hex, :bucs, "1.0.6", "b0467388b5adaabb4d8726595b7b754a961bfe80f0ccac88f58e1afea32be6d0", [:make, :mix, :rebar3], []},
+%{"bucs": {:hex, :bucs, "1.0.8", "24b80d65d8ecb2ea2ca05cfb1e5c80c4fec9696b1b2d27515fd692520d184200", [:make, :mix, :rebar3], []},
   "doteki": {:hex, :doteki, "1.0.5", "1e719dbe540f84ea87c6dc92be4b6f706a42b08067af519de13b6efc27243a49", [:make, :mix, :rebar3], [{:bucs, "~> 1.0.6", [hex: :bucs, optional: false]}]},
-  "jsx": {:hex, :jsx, "2.8.1", "1453b4eb3615acb3e2cd0a105d27e6761e2ed2e501ac0b390f5bbec497669846", [:mix, :rebar3], []}}
+  "jsx": {:hex, :jsx, "2.8.2", "7acc7d785b5abe8a6e9adbde926a24e481f29956dd8b4df49e3e4e7bcc92a018", [:mix, :rebar3], []}}

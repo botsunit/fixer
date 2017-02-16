@@ -82,7 +82,7 @@ Equivalent to [`convert(Amount, FromCurrency, ToCurrency, #{})`](#convert-4).
 ### convert/4 ###
 
 <pre><code>
-convert(Amount::<a href="#type-amount">amount()</a>, FromCurrency::<a href="#type-currency">currency()</a>, ToCurrency::<a href="#type-currency">currency()</a>, Options::<a href="#type-options">options()</a>) -&gt; {ok, NewAmount::<a href="#type-amount">amount()</a>} | {error, unavailable_from_currency} | {error, unavailable_to_currency} | {error, rates_not_available}
+convert(Amount::<a href="#type-amount">amount()</a>, FromCurrency::<a href="#type-currency">currency()</a>, ToCurrency::<a href="#type-currency">currency()</a>, Options::<a href="#type-options">options()</a>) -&gt; {ok, NewAmount::<a href="#type-amount">amount()</a>} | {error, unavailable_from_currency} | {error, unavailable_to_currency} | {error, rates_not_available} | {error, timeout} | {error, service_error}
 </code></pre>
 <br />
 

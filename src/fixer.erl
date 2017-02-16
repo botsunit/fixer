@@ -55,9 +55,20 @@ convert(Amount, FromCurrency, ToCurrency) ->
   {ok, NewAmount :: amount()}
   | {error, unavailable_from_currency}
   | {error, unavailable_to_currency}
-  | {error, rates_not_available}.
+  | {error, rates_not_available}
+  | {error, timeout}
+  | {error, service_error}.
+convert(Amount, Currency, Currency, _) ->
+  {ok, Amount};
 convert(Amount, FromCurrency, ToCurrency, Options) when is_map(Options) ->
-  gen_server:call(?MODULE, {convert, bucs:to_float(Amount), bucs:to_binary(FromCurrency), bucs:to_binary(ToCurrency), Options});
+  try
+    gen_server:call(?MODULE, {convert, bucs:to_float(Amount), bucs:to_binary(FromCurrency), bucs:to_binary(ToCurrency), Options})
+  catch
+    exit:{timeout, _} ->
+      {error, timeout};
+    _:_ ->
+      {error, service_error}
+  end;
 convert(Amount, FromCurrency, ToCurrency, Options) when is_list(Options) ->
   convert(Amount, FromCurrency, ToCurrency, maps:from_list(Options)).
 
