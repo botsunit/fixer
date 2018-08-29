@@ -184,9 +184,11 @@ find_rates(Date, Base, Table) ->
   end.
 
 get_rates(Base, Date, Table) ->
+  APIKey = application:get_env([fixer, api_key]),
   case httpc:request(get, {bucs:to_string(<<?FIXERIO_URL/binary,
                                             (bucs:to_binary(Date))/binary,
-                                            "?base=", Base/binary>>), []}, [], []) of
+                                            "?base=", Base/binary,
+                                            "&access_key=", APIKey/binary>>), []}, [], []) of
     {ok, {{_, 200, _}, _, Body}} ->
       #{<<"date">> := RDate} = Data = jsx:decode(bucs:to_binary(Body), [return_maps]),
       ets:insert(Table, {{RDate, Base}, Data}),
