@@ -184,7 +184,7 @@ find_rates(Date, Base, Table) ->
   end.
 
 get_rates(Base, Date, Table) ->
-  APIKey = application:get_env([fixer, api_key]),
+  APIKey = doteki:get_env([fixer, api_key]),
   case httpc:request(get, {bucs:to_string(<<?FIXERIO_URL/binary,
                                             (bucs:to_binary(Date))/binary,
                                             "?base=", Base/binary,
